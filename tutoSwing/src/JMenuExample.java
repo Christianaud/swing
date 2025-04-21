@@ -8,15 +8,17 @@ public class JMenuExample {  // Changement du nom de classe pour éviter la conf
 
         // Définir le menu principal
         JMenuBar menuBar = new JMenuBar();  // Renommé pour éviter confusion
-        JMenu tool = new JMenu("Outils");
-        JMenu login = new JMenu("Inscription");
-        JMenu help = new JMenu("Aide");
+        JMenu tool = new JMenu("File");
+        JMenu login = new JMenu("Edit");
+        JMenu help = new JMenu("Help");
 
         // Définir le sous-menu pour Fichier
         JMenuItem newItem = new JMenuItem("Nouveau");
         JMenuItem openItem = new JMenuItem("Ouvrir");  
         JMenuItem saveItem = new JMenuItem("Enregistrer");
-
+        JMenuItem cut = new JMenuItem("cut");  // Ajout d'un élément de menu pour quitter
+        JMenuItem copy = new JMenuItem("copy");  // Ajout d'un élément de menu pour quitter
+        JMenuItem paste = new JMenuItem("paste");  // Ajout d'un élément de menu pour quitter
         // raccorder outils et ses sous-menus
         tool.add(newItem);
         tool.add(openItem); 
